@@ -690,4 +690,4 @@ Error generating stack: `+o.message+`
       }
     }
   }
-`;function L6(){return v.jsxs(ix,{children:[v.jsx(d3,{}),v.jsx(k3,{}),v.jsxs(X2,{children:[v.jsx(ni,{path:"/",element:v.jsx(g6,{})}),v.jsx(ni,{path:"/about",element:v.jsx(YS,{})}),v.jsx(ni,{path:"/contact",element:v.jsx(n6,{})}),v.jsx(ni,{path:"/Resume",element:v.jsx(E6,{})})]}),v.jsx(T6,{})]})}c0(document.getElementById("root")).render(v.jsx(P.StrictMode,{children:v.jsx(L6,{})}));
+`;function L6(){return v.jsxs(ix,{basename:"/reactLive",children:[v.jsx(d3,{}),v.jsx(k3,{}),v.jsxs(X2,{children:[v.jsx(ni,{path:"/",element:v.jsx(g6,{})}),v.jsx(ni,{path:"/about",element:v.jsx(YS,{})}),v.jsx(ni,{path:"/contact",element:v.jsx(n6,{})}),v.jsx(ni,{path:"/Resume",element:v.jsx(E6,{})})]}),v.jsx(T6,{})]})}c0(document.getElementById("root")).render(v.jsx(P.StrictMode,{children:v.jsx(L6,{})}));
