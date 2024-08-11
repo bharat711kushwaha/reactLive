@@ -9,7 +9,7 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 function App() {
   return (
-    <Router>
+    <Router basename="/reactLive">
     <GlobalStyle />
     
  <MainHeader/>
