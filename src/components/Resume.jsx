@@ -4,6 +4,10 @@ import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaPhoneAlt, FaJava, FaEnvelope } from 'react-icons/fa';
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNodedotjs, SiExpress, SiMongodb } from 'react-icons/si';
 
+// Importing images
+import ECommerceImage from '/screen2.png'; // Update the path if necessary
+import BlogImage from '/screen.png'; // Update the path if necessary
+
 // Styled Components
 const Container = styled.div`
   padding: 60px 20px;
@@ -93,6 +97,7 @@ const ProjectCard = styled(Card)`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   img {
     width: 100%;
     height: auto;
@@ -203,7 +208,7 @@ const Resume = () => {
           <Subtitle>Experience</Subtitle>
           <Experience>
             <ProjectCard>
-              <img src="/screen.png" alt="E-Commerce Website" />
+              <img src={ECommerceImage} alt="E-Commerce Website" />
               <JobTitle>E-commerce Platform</JobTitle>
               <JobDescription>
                 Developed an intuitive user interface with React, integrating features like product pages, reviews, and secure payments. Implemented robust search and filtration options.
@@ -211,7 +216,7 @@ const Resume = () => {
               <a href="https://tinyurl.com/2naa6c5u" target="_blank" rel="noopener noreferrer">View Project</a>
             </ProjectCard>
             <ProjectCard>
-              <img src="/screen2.png" alt="Blogging Website" />
+              <img src={BlogImage} alt="Blogging Website" />
               <JobTitle>Blog Platform</JobTitle>
               <JobDescription>
                 Enhanced user experience with a search bar, dark/light mode toggle, and comprehensive authentication and CRUD functionalities.
