@@ -1,7 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FaLinkedin, FaGithub, FaPhoneAlt, FaEnvelope, FaJava } from 'react-icons/fa';
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNodedotjs, SiExpress, SiMongodb } from 'react-icons/si';
+
+// Importing the image
+import ProfileImageSrc from '/bharat.jpg'; // Update the path if necessary
 
 // Styled Components
 const Container = styled.div`
@@ -54,7 +58,7 @@ const HeroSubtitle = styled.h2`
   }
 `;
 
-const ContactButton = styled.a`
+const ContactButton = styled(Link)`
   display: inline-block;
   padding: 10px 20px;
   color: #fff;
@@ -72,7 +76,6 @@ const ContactButton = styled.a`
 const Section = styled.section`
   padding: 60px 20px;
   background: #f1f1f1;
-  
 `;
 
 const SummaryCard = styled.div`
@@ -145,7 +148,7 @@ const ProjectList = styled.div`
     justify-content: space-around;
   }
 `;
- 
+
 const Footer = styled.footer`
   background-color: #f8f9fa;
   padding: 20px;
@@ -175,16 +178,15 @@ const Home = () => {
   return (
     <Container>
       <HeroSection>
-        <ProfileImage src="/bharat.jpg" alt="Bharat Kumar" />
+        <ProfileImage src={ProfileImageSrc} alt="Bharat Kumar" />
         <HeroTitle>Bharat Kumar</HeroTitle>
         <HeroSubtitle>Software Engineer</HeroSubtitle>
-        <ContactButton href="/contact">Contact Me</ContactButton>
+        <ContactButton to="/contact">Contact Me</ContactButton>
       </HeroSection>
       
       <Section>
-       
         <SummaryCard>
-        <h2>Summary</h2>
+          <h2>Summary</h2>
           <p>
             Organized and self-motivated computer science sophomore fluent in C, C++, Java, JavaScript, MERN Stack, and CSS programming languages. 
             Possess practical working knowledge of relational databases using MongoDB and SQL Server. Constantly updating technical skills through courses and bootcamps. 
@@ -264,3 +266,4 @@ const Home = () => {
 };
 
 export default Home;
+
